@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Survey Form</title>
+<style>
+    /* Made by Windel Garoy */
+    /* CSS Codes */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+    }
+    
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1, h2, h3 {
+        text-align: center;
+    }
+    
+    form {
+        margin-top: 20px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 8px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+    
+    input[type="radio"] {
+        margin-right: 10px;
+    }
+    
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .choose-answer {
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+    
+    /* Media Queries */
+    @media (min-width: 768px) {
+        form {
+            padding: 20px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Philippine Food Survey</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        
+        <div class="choose-answer">
+            <h3>What is your favorite Filipino dish?</h3>
+            <input type="radio" id="q1_adobo" name="q1" value="Adobo" required>
+            <label for="q1_adobo">Adobo</label>
+            <input type="radio" id="q1_sinigang" name="q1" value="Sinigang">
+            <label for="q1_sinigang">Sinigang</label>
+            <input type="radio" id="q1_karekare" name="q1" value="Kare-Kare">
+            <label for="q1_karekare">Kare-Kare</label>
+        </div>
+        
+        <div class="choose-answer">
+            <h3>Which Filipino dessert do you enjoy the most?</h3>
+            <input type="radio" id="q2_halo" name="q2" value="Halo-Halo" required>
+            <label for="q2_halo">Halo-Halo</label>
+            <input type="radio" id="q2_leche" name="q2" value="Leche Flan">
+            <label for="q2_leche">Leche Flan</label>
+            <input type="radio" id="q2_buko" name="q2" value="Buko Pandan">
+            <label for="q2_buko">Buko Pandan</label>
+        </div>
+        
+        <div class="choose-answer">
+            <h3>Which Filipino street food is your favorite?</h3>
+            <input type="radio" id="q3_isaw" name="q3" value="Isaw" required>
+            <label for="q3_isaw">Isaw</label>
+            <input type="radio" id="q3_banana" name="q3" value="Banana Cue">
+            <label for="q3_banana">Banana Cue</label>
+            <input type="radio" id="q3_taho" name="q3" value="Taho">
+            <label for="q3_taho">Taho</label>
+        </div>
+        
+        <div class="choose-answer">
+            <h3>Which Filipino soup do you prefer?</h3>
+            <input type="radio" id="q4_bulalo" name="q4" value="Bulalo" required>
+            <label for="q4_bulalo">Bulalo</label>
+            <input type="radio" id="q4_lomi" name="q4" value="Lomi">
+            <label for="q4_lomi">Lomi</label>
+            <input type="radio" id="q4_sopas" name="q4" value="Sopas">
+            <label for="q4_sopas">Sopas</label>
+        </div>
+        
+        <div class="choose-answer">
+            <h3>Which Filipino fruit do you enjoy the most?</h3>
+            <input type="radio" id="q5_mango" name="q5" value="Mango" required>
+            <label for="q5_mango">Mango</label>
+            <input type="radio" id="q5_banana" name="q5" value="Banana">
+            <label for="q5_banana">Banana</label>
+            <input type="radio" id="q5_durian" name="q5" value="Durian">
+            <label for="q5_durian">Durian</label>
+        </div>
+        
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
